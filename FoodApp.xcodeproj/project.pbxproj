@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEB7CF632BCE2CE30038BD60 /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF622BCE2CE30038BD60 /* FoodAppApp.swift */; };
+		CEB7CF632BCE2CE30038BD60 /* FoodMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF622BCE2CE30038BD60 /* FoodMaker.swift */; };
 		CEB7CF652BCE2CE30038BD60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF642BCE2CE30038BD60 /* ContentView.swift */; };
 		CEB7CF672BCE2CE40038BD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB7CF662BCE2CE40038BD60 /* Assets.xcassets */; };
 		CEB7CF6A2BCE2CE40038BD60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB7CF692BCE2CE40038BD60 /* Preview Assets.xcassets */; };
+		CEB7CF722BCE2E7A0038BD60 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF712BCE2E7A0038BD60 /* Food.swift */; };
+		CEB7CF772BCE35F30038BD60 /* FoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF762BCE35F30038BD60 /* FoodCard.swift */; };
+		CEB7CF7A2BCE4F020038BD60 /* ImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF792BCE4F020038BD60 /* ImageHeader.swift */; };
+		CEB7CF7C2BCE4FEE0038BD60 /* FoodHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF7B2BCE4FEE0038BD60 /* FoodHeader.swift */; };
+		CEB7CF7E2BCE56710038BD60 /* FoodCardHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CF7D2BCE56710038BD60 /* FoodCardHorizontal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEB7CF5F2BCE2CE30038BD60 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEB7CF622BCE2CE30038BD60 /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
+		CEB7CF622BCE2CE30038BD60 /* FoodMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMaker.swift; sourceTree = "<group>"; };
 		CEB7CF642BCE2CE30038BD60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEB7CF662BCE2CE40038BD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB7CF692BCE2CE40038BD60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEB7CF712BCE2E7A0038BD60 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		CEB7CF762BCE35F30038BD60 /* FoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCard.swift; sourceTree = "<group>"; };
+		CEB7CF792BCE4F020038BD60 /* ImageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeader.swift; sourceTree = "<group>"; };
+		CEB7CF7B2BCE4FEE0038BD60 /* FoodHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodHeader.swift; sourceTree = "<group>"; };
+		CEB7CF7D2BCE56710038BD60 /* FoodCardHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardHorizontal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,10 @@
 		CEB7CF612BCE2CE30038BD60 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				CEB7CF622BCE2CE30038BD60 /* FoodAppApp.swift */,
-				CEB7CF642BCE2CE30038BD60 /* ContentView.swift */,
-				CEB7CF662BCE2CE40038BD60 /* Assets.xcassets */,
+				CEB7CF702BCE2E470038BD60 /* Model */,
+				CEB7CF742BCE359F0038BD60 /* App */,
+				CEB7CF732BCE355F0038BD60 /* View */,
+				CEB7CF752BCE35AD0038BD60 /* Resources */,
 				CEB7CF682BCE2CE40038BD60 /* Preview Content */,
 			);
 			path = FoodApp;
@@ -65,6 +76,50 @@
 				CEB7CF692BCE2CE40038BD60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEB7CF702BCE2E470038BD60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CF712BCE2E7A0038BD60 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB7CF732BCE355F0038BD60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CF782BCE4EA40038BD60 /* Component */,
+				CEB7CF642BCE2CE30038BD60 /* ContentView.swift */,
+				CEB7CF762BCE35F30038BD60 /* FoodCard.swift */,
+				CEB7CF7D2BCE56710038BD60 /* FoodCardHorizontal.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB7CF742BCE359F0038BD60 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CF622BCE2CE30038BD60 /* FoodMaker.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEB7CF752BCE35AD0038BD60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CF662BCE2CE40038BD60 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEB7CF782BCE4EA40038BD60 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CF792BCE4F020038BD60 /* ImageHeader.swift */,
+				CEB7CF7B2BCE4FEE0038BD60 /* FoodHeader.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB7CF7E2BCE56710038BD60 /* FoodCardHorizontal.swift in Sources */,
+				CEB7CF7C2BCE4FEE0038BD60 /* FoodHeader.swift in Sources */,
 				CEB7CF652BCE2CE30038BD60 /* ContentView.swift in Sources */,
-				CEB7CF632BCE2CE30038BD60 /* FoodAppApp.swift in Sources */,
+				CEB7CF7A2BCE4F020038BD60 /* ImageHeader.swift in Sources */,
+				CEB7CF632BCE2CE30038BD60 /* FoodMaker.swift in Sources */,
+				CEB7CF722BCE2E7A0038BD60 /* Food.swift in Sources */,
+				CEB7CF772BCE35F30038BD60 /* FoodCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
